@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    width: 100%;
+}
+
+.title{
+    width: 100%;
+    height: 498px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/284226034.jpg?k=17878066c466037c28fd3dd473766c5f05bccff5abcf745f7c7e02f623986401&o=&hp=1);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 7%;
+}
+
+.title .text{
+    width: 480px;
+    font-size: 41px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.title .text p{
+    line-height: 40px;
+}
+
+.title .text button{
+    width: 228px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #b99470;
+    transition: 0.3s;
+}
+
+.title .text button:hover{
+    background-color: #ffcf3e;
+}
+
+.bookOnline{
+    width: 320px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.bookOnline p{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.bookOnline .check_in{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #acacac;
+}
+
+.bookOnline .check_out{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #acacac;
+}
+
+.bookOnline .guests{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #acacac;
+}
+
+.bookOnline button{
+    width: 100%;
+    height: 42px;
+    border: none;
+    background-color: #b99470;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.bookOnline button:hover{
+    background-color: #4c3d2e;
+}
+
+.about_us{
+    width: 100%;
+    height: 970px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 7%;
+}
+
+.about_us > h1{
+    font-size: 34px;
+    color: #000000;
+    position: relative;
+}
+
+.about_us > h1::before{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #000000;
+}
+
+.about_us .text{
+    width: 100%;
+    height: 610px;
+    display: flex;
+}
+
+.about_us .text .txt{
+    width: 625px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 48px 0 0;
+    padding: 16px 0 0;
+}
+
+.about_us .text .txt h1{
+    font-size: 34px;
+    color: #b99470;
+}
+
+.about_us .text .txt p{
+    font-size: 18px;
+    color: #484848;
+}
+
+.about_us .text img{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.about_us .text .txt span{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b99470;
+    transition: 0.3s;
+}
+
+.about_us .text .txt span:hover{
+    width: 170px;
+}
+
+.card_panel{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 24px 16px;
+    box-shadow: 0 0 20px #acacac98;
+}
+
+.card_panel .cards{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #b99470;
+    gap: 15px;
+    margin: 16px;
+}
+
+.home .rooms{
+    width: 100%;
+    height: 478px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 7%;
+}
+
+.home .rooms h1{
+    font-size: 34px;
+    color: #000000;
+    position: relative;
+}
+
+.home .rooms h1::before{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #000000;
+}
+
+.home .rooms .cards_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .rooms .cards_container .card{
+    width: 234px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #acacac81;
+    overflow: hidden;
+    padding-bottom: 30px;
+    transition: 0.3s;
+}
+
+.home .rooms .cards_container .card:hover img{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.home .rooms .cards_container .card p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #b99470;
+    margin-left: 20px;
+    position: relative;
+}
+
+.home .rooms .cards_container .card p::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 63px;
+    height: 2px;
+    background-color: #b99470;
+    transition: 0.3s;
+}
+
+.home .rooms .cards_container .card:hover p::before{
+    right: 0;
+    transform: translateX(30px);
+    background-color: transparent;
+}
+
+.home .facilities{
+    width: 100%;
+    height: 788px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 7%;
+}
+
+.home .facilities h1{
+    font-size: 34px;
+    color: #484848;
+    position: relative;
+}
+
+.home .facilities h1:before{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #000000;
+}
+
+.home .facilities .cards_container{
+    width: 100%;
+    height: 580px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home .facilities .card{
+    width: 380px;
+    height: 253px;
+    background-image: url(https://navruzhotel.uz/_nuxt/img/restoran1.3096ed8.jpg);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.home .facilities .card .blur{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #00000083;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.home .facilities .card .blur p{
+    width: 190px;
+    text-align: center;
+}
+
+.home .facilities .card:hover .blur p{
+    transform: translateX(50px);
+    transition: 0.3s;
+}
+
+.home .facilities .card:hover .blur{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.home .facilities .card:nth-child(2){
+    background-image: url(	https://navruzhotel.uz/_nuxt/img/bar13.c55439e.jpg);
+}
+
+.home .facilities .card:nth-child(3){
+    background-image: url(	https://navruzhotel.uz/_nuxt/img/conference2.c46191e.jpg);
+}
+
+.home.facilities .card:nth-child(4){
+    background-image: url(	https://navruzhotel.uz/_nuxt/img/pool1.2f02c34.jpg);
+}
+
+.home .facilities .card:nth-child(5){
+    background-image: url(	https://navruzhotel.uz/_nuxt/img/gym1.77c1917.jpg);
+}
+
+.home .facilities .card:nth-child(6){
+    background-image: url(	https://navruzhotel.uz/_nuxt/img/billiard1.e9196d7.jpg);
+}
+
+.home .facilities button{
+    width: 228px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 18px;
+}
+
+.home .facilities .link{
+    margin: 0 auto;
+}
+
+.map{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0 7%;
+    margin: 30px 0;
+}
+
+.map iframe{
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #acacac91;
+}
+
+.developer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #484848;
+    padding: 15px 7%;
+}
+
+.developer .developers_name{
+    display: flex;
+    gap: 10px;
+}
+
+.developer .developers_name span{
+    color: #b99470;
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 134px;
+}
+
+.nav_top{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.nav_top ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 8%;
+}
+
+.nav_top ul .routes{
+    text-decoration: none;
+    color: #484848;
+    font-size: 16px;
+}
+
+.nav_bottom{
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.nav_bottom img{
+    width: 159px;
+}
+
+.nav_bottom p{
+    font-size: 20px;
+    color: #b99470;
+    font-weight: 600;
+}
+
+select{
+    border: none;
+    outline: none;
+}

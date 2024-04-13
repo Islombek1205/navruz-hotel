@@ -1,0 +1,10 @@
+.menuPage{
+    width: 100%;
+}
+
+.menuPage .img{
+    width: 100%;
+    height: 400px;
+    background-image: url(	https://navruzhotel.uz/_nuxt/img/bg.92880d2.jpg);
+    background-size: cover;
+}

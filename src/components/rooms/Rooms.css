@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rooms{
+    width: 100%;
+}
+
+.rooms .img{
+    width: 100%;
+    height: 400px;
+    background-image: url(https://navruzhotel.uz/_nuxt/img/bg.ca0e189.jpg);
+    background-size: cover;
+}
+
+.rooms .book_online{
+    width: 86%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #acacac91;
+    padding: 0 22px;
+    margin: 30px auto;
+}
+
+.rooms .book_online p{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.rooms .book_online button{
+    width: 173px;
+    height: 42px;
+    border: none;
+    background-color: #b99470;
+    font-weight: 600;
+    color: #fff;
+}

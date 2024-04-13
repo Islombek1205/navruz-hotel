@@ -1,0 +1,92 @@
+.contactsPage{
+    width: 100%;
+}
+
+.contactsPage .img{
+    width: 100%;
+    height: 400px;
+    background-image: url(	https://navruzhotel.uz/_nuxt/img/bg.0fb8f92.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactsPage .contactUs{
+    width: 100%;
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 7%;
+}
+
+.contactsPage .contactUs h1{
+    font-size: 34px;
+    color: #000000;
+    position: relative;
+}
+
+.contactsPage .contactUs h1:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 183px;
+    height: 4px;
+    background-color: #b99470;
+}
+
+.contactsPage .contactUs p{
+    font-size: 18px;
+    color: #282828;
+}
+
+.contactsPage .contactUs span{
+    font-size: 18px;
+    color: #b99470;
+}
+
+.contactsPage .contactUs .ift{
+    display: flex;
+    gap: 20px;
+}
+
+.contactsPage .contactUs .ift a{
+    text-decoration: none;
+    font-size: 28px;
+    color: #666666;
+}
+
+.contactsPage .contactUs > button{
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #b99470;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contactsPage .contactUs .book_online{
+    width: 100%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #acacac91;
+    padding: 0 22px;
+}
+
+.contactsPage .contactUs .book_online p{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.contactsPage .contactUs .book_online button{
+    width: 173px;
+    height: 42px;
+    border: none;
+    background-color: #b99470;
+    font-weight: 600;
+    color: #fff;
+}

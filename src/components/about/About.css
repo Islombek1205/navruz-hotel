@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about{
+    width: 100%;
+}
+
+.about .img{
+    width: 100%;
+    height: 400px;
+    background-image: url(https://navruzhotel.uz/_nuxt/img/bg.9fce939.jpg);
+}
+
+.about .about_us{
+    width: 100%;
+    height: 905px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 7%;
+}
+
+.about .about_us > p{
+    font-size: 41px;
+    font-weight: 500;
+    color: #b99470;
+}
+
+.about .about_us > span{
+    font-size: 18px;
+    color: #484848;
+}
+
+.about .about_us .ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #282828;
+}
+
+.about .about_us .ul ul{
+    line-height: 50px;
+
+    ::marker{
+        color: #b99470;
+    }
+}
+
+.about .about_us .book_online{
+    width: 100%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #acacac91;
+    padding: 0 22px;
+}
+
+.about .about_us .book_online p{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.about .about_us .book_online button{
+    width: 173px;
+    height: 42px;
+    border: none;
+    background-color: #b99470;
+    font-weight: 600;
+    color: #fff;
+}
