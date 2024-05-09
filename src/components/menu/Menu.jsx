@@ -1,7 +1,9 @@
 import React from 'react'
 import './Menu.css'
+import { useTranslation } from 'react-i18next'
 
 const Menu = () => {
+  const {t} = useTranslation()
   return (
     <div className='menuPage'>
       <div className="img"></div>

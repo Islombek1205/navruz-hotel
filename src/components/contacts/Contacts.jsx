@@ -4,14 +4,18 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { PiTelegramLogo } from "react-icons/pi";
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 
 const Contacts = () => {
+  const {t} = useTranslation()
+
   return (
     <div className='contactsPage'>
       <div className="img"></div>
       <div className="contactUs">
-        <h1>Contact us</h1>
-        <p>Uzbekistan, Tashkent, Yunusabad district, Shivli street, 6-8, 100084</p>
+        <h1>{t('Contact us')}</h1>
+        <p>{t('Uzbekistan, Tashkent, Yunusabad district, Shivli street, 6-8, 100084')}</p>
         <p>Tel.: <span>(+998) 78 150 10 90</span></p>
         <span>info@navruzhotel.uz</span>
         <div className="ift">
@@ -19,10 +23,10 @@ const Contacts = () => {
           <a href="https://www.facebook.com/hotelnavruz/"><FaFacebookF /></a>
           <a href="https://t.me/navruzhotel"><PiTelegramLogo /></a>
         </div>
-        <button>Contact us</button>
+        <button>{t('Contact us')}</button>
         <div className="book_online">
-          <p>Book online</p>
-          <Link to='/booking'><button>FIND ROOM</button></Link>
+          <p>{t('Book online')}</p>
+          <Link to='/booking'><button>{t('FIND ROOM')}</button></Link>
         </div>
       </div>
       <div className="map">

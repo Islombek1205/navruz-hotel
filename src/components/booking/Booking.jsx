@@ -1,38 +1,42 @@
 import React from 'react'
 import './Booking.css'
+import { useTranslation } from 'react-i18next';
+
 
 const Booking = () => {
+  const {t} = useTranslation()
+
   return (
     <div className='booking'>
       <div className="img"></div>
       <div className="content">
-        <h1>Booking</h1>
+        <h1>{t('booking')}</h1>
         <div className="reservation">
           <div className="details">
-            <p>Details of your stay</p>
+            <p>{t('Details of your stay')}</p>
           </div>
         </div>
 
         <div className="rules">
-          <p>Check-in rules</p>
+          <p>{t('Check-in rules')}</p>
           <ul>
-            <li>- Check-in 14:00 Check-out 12:00</li>
-            <li>- Early check-in from 06:00 +50% of the room rate</li>
-            <li>- Check-in before 06:00 is charged 100% of the room rate</li>
-            <li>- Late check-out until 18:00 +50% of the room rate</li>
-            <li>- Check-out after 18:00 is charged 100% of the room rate</li>
+            <li>- {t('Check-in 14:00 Check-out 12:00')}</li>
+            <li>- {t('Early check-in from 06:00 +50% of the room rate')}</li>
+            <li>- {t('Check-in before 06:00 is charged 100% of the room rate')}</li>
+            <li>- {t('Late check-out until 18:00 +50% of the room rate')}</li>
+            <li>- {t('Check-out after 18:00 is charged 100% of the room rate')}</li>
           </ul>
         </div>
 
         <div className="payment">
-          <p>Payment</p>
-          <span>Uzbek sum</span>
+          <p>{t('Payment')}</p>
+          <span>{t('Uzbek sum')}</span>
         </div>
 
         <div className="cards">
-          <p>Cards accepted</p>
+          <p>{t('Cards accepted')}</p>
           <span>UzCard, Humo, MasterCard, Visa, China Union Pay, Maestro.</span>
-          <span>Payment in rubles via Paygine</span>
+          <span>{t('Payment in rubles via Paygine')}</span>
         </div>
       </div>
         <div className="map">

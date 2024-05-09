@@ -54,3 +54,7 @@ select{
     border: none;
     outline: none;
 }
+
+:optional{
+    width: 70px;
+}

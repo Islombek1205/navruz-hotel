@@ -1,35 +1,39 @@
 import React from 'react'
 import './About.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+
 
 const About = () => {
+  const {t} = useTranslation()
+
   return (
     <div className='about'>
       <div className="img"></div>
       <div className="about_us">
-        <p>About us</p>
-        <span><b>Cozy and comfortable Navruz Hotel Tashkent</b> is located in the city center and first opened its doors to hotel guests in 2018.</span>
-        <span><b>The hotel offers 128 rooms</b> of various categories for a comfortable stay, equipped with modern technology. Each room has a smart TV, mini fridge, air conditioning, Wi-Fi and a secure safe.</span>
-        <p>Why we are?</p>
+        <p>{t('about')}</p>
+        <span><b>{t('Cozy and comfortable Navruz Hotel Tashkent')}</b> {t('is located in the city center and first opened its doors to hotel guests in 2018.')}</span>
+        <span><b>{t('The hotel offers 128 rooms')}</b> {t('of various categories for a comfortable stay, equipped with modern technology. Each room has a smart TV, mini fridge, air conditioning, Wi-Fi and a secure safe.')}</span>
+        <p>{t('Why we are?')}</p>
         <div className="ul">
           <ul>
-            <li>Affordable prices</li>
-            <li>Online booking management</li>
-            <li>Multilingual staff</li>
-            <li>Security</li>
-            <li>Non-smoking rooms</li>
+            <li>{t('Affordable prices')}</li>
+            <li>{t('Online booking management')}</li>
+            <li>{t('Multilingual staff')}</li>
+            <li>{t('Security')}</li>
+            <li>{t('Non-smoking rooms')}</li>
           </ul>
           <ul>
-            <li>Free Wi-Fi</li>
-            <li>Airport shuttle</li>
-            <li>Family rooms</li>
-            <li>Free parking</li>
-            <li>24-hour front desk</li>
+            <li>{t('Free Wi-Fi')}</li>
+            <li>{t('Airport shuttle')}</li>
+            <li>{t('Family rooms')}</li>
+            <li>{t('Free parking')}</li>
+            <li>{t('24-hour front desk')}</li>
           </ul>
         </div>
         <div className="book_online">
-          <p>Book online</p>
-          <Link to='/booking'><button>FIND ROOM</button></Link>
+          <p>{t('Book online')}</p>
+          <Link to='/booking'><button>{t('FIND ROOM')}</button></Link>
         </div>
       </div>
         <div className="map">

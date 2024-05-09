@@ -2,19 +2,22 @@ import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 
 
 const Home = () => {
+  const {t} = useTranslation()
+  
   return (
     <div className='home'>
         <div className="title">
           <div className="text">
-            <p>Cozy hotel for business and leisure in the business center of Tashkent</p>
-            <Link to='/booking'><button>Book</button></Link>
+            <p>{t('Cozy hotel for business and leisure in the business center of Tashkent')}</p>
+            <Link to='/booking'><button>{t('Book')}</button></Link>
           </div>
           <div className="bookOnline">
-            <h3>Book online</h3>
-            <p>Get your guaranteed accommodation <span>RIGHT NOW!</span></p>
+            <h3>{t('Book online')}</h3>
+            <p>{t('Get your guaranteed accommodation')} <span>{t('RIGHT NOW!')}</span></p>
             <div className="check_in">
 
             </div>
@@ -24,85 +27,85 @@ const Home = () => {
             <div className="guests">
               
             </div>
-            <Link to='/booking'><button>FIND ROOM</button></Link>
+            <Link to='/booking'><button>{t('FIND ROOM')}</button></Link>
           </div>
         </div>
 
         <div className="about_us">
-          <h1>About us</h1>
+          <h1>{t('about')}</h1>
           <div className="text">
             <div className="txt">
-              <h1>Navruz Hotel Tashkent</h1>
-              <p>Navruz Hotel Tashkent is a cozy, comfortable hotel with high-class service 24/7 and an excellent location in the business center of the city with developed infrastructure.</p>
-              <p>The hotel offers 128 comfortable and well-equipped rooms of various categories. All hotel rooms are equipped with air conditioning, refrigerator, safety box, smart TV with satellite channels, Wi-Fi and toiletries.</p>
-              <p>Hotel guests have access to spacious conference rooms, a restaurant, a bar, a gym, billiards, a sauna, an outdoor swimming pool, a cozy courtyard with gazebos and free bicycle rental. Airport transfers and room service are available.</p>
-              <p>The reception is open 24 hours a day.</p>
-              <Link to='/about' className='link'><span>Learn more <FaArrowRight /></span></Link>
+              <h1>{t('Navruz Hotel Tashkent')}</h1>
+              <p>{t('Navruz Hotel Tashkent is a cozy, comfortable hotel with high-class service 24/7 and an excellent location in the business center of the city with developed infrastructure.')}</p>
+              <p>{t('The hotel offers 128 comfortable and well-equipped rooms of various categories. All hotel rooms are equipped with air conditioning, refrigerator, safety box, smart TV with satellite channels, Wi-Fi and toiletries.')}</p>
+              <p>{t('Hotel guests have access to spacious conference rooms, a restaurant, a bar, a gym, billiards, a sauna, an outdoor swimming pool, a cozy courtyard with gazebos and free bicycle rental. Airport transfers and room service are available.')}</p>
+              <p>{t('The reception is open 24 hours a day.')}</p>
+              <Link to='/about' className='link'><span>{t('Learn more')} <FaArrowRight /></span></Link>
             </div>
             <img src="https://navruzhotel.uz/_nuxt/img/about-bg.57c329c.png" alt="bolakay" />
           </div>
           <div className="card_panel">
             <div className="cards">
               <img src="	https://navruzhotel.uz/_nuxt/img/medal.bde7ded.svg" alt="$" />
-              <span>Affordable room price</span>
+              <span>{t('Affordable room price')}</span>
             </div>
             <div className="cards">
               <img src="https://navruzhotel.uz/_nuxt/img/snow.7c72b49.svg" alt="barg" />
-              <span>Green area to relax</span>
+              <span>{t('Green area to relax')}</span>
             </div>
             <div className="cards">
               <img src="	https://navruzhotel.uz/_nuxt/img/wifi.cbdbbea.svg" alt="wi-fi" />
-              <span>Free Wi-Fi</span>
+              <span>{t('Free Wi-Fi')}</span>
             </div>
             <div className="cards">
               <img src="https://navruzhotel.uz/_nuxt/img/bonfire.5cef29a.svg" alt="person" />
-              <span>Competent staff 24/7</span>
+              <span>{t('Competent staff 24/7')}</span>
             </div>
           </div>
         </div>
 
         <div className="rooms">
-          <h1>Rooms</h1>
+          <h1>{t('rooms')}</h1>
           <div className="cards_container">
             <Link to='/rooms' className='link'>
               <div className="card">
                 <img src="	https://navruzhotel.uz/_nuxt/img/twin-room.e166ff0.png" alt="" />
-                <p>Standart Twin</p>
+                <p>{t('Standart Twin')}</p>
               </div>
             </Link>
             <Link to='/rooms' className='link'>
               <div className="card">
                 <img src="	https://navruzhotel.uz/_nuxt/img/king-room.b252916.png" alt="" />
-                <p>Standart King</p>
+                <p>{t('Standart King')}</p>
               </div>
             </Link>
             <Link to='/rooms' className='link'>
               <div className="card">
                 <img src="	https://navruzhotel.uz/_nuxt/img/suite-room.01e2e1a.png" alt="" />
-                <p>Suite</p>
+                <p>{t('Suite')}</p>
               </div>
             </Link>
             <Link to='/rooms' className='link'>
               <div className="card">
                 <img src="		https://navruzhotel.uz/_nuxt/img/econom-room.4a937ff.png" alt="" />
-                <p>Econonm Standart</p>
+                <p>{t('Econonm Standart')}</p>
               </div>
             </Link>
             <Link to='/rooms' className='link'>
               <div className="card">
                 <img src="	https://navruzhotel.uz/_nuxt/img/superior-room.ed75c91.png" alt="" />
-                <p>Superior King</p>
+                <p>{t('Superior King')}</p>
               </div>
             </Link>
           </div>
         </div>
 
         <div className="facilities">
-          <h1>Facilities</h1>
+          <h1>{t('facilities')}</h1>
           <div className="cards_container">
             <div className="card">
               <div className="blur">
-                <p>Restaurant</p>
+                <p>{t('Restaurant')}</p>
               </div>
             </div>
             <div className="card">
@@ -112,26 +115,26 @@ const Home = () => {
             </div>
             <div className="card">
               <div className="blur">
-                <p>Conference rooms</p>
+                <p>{t('Conference rooms')}</p>
               </div>
             </div>
             <div className="card">
               <div className="blur">
-                <p>Swimming pool</p>
+                <p>{t('Swimming pool')}</p>
               </div>
             </div>
             <div className="card">
               <div className="blur">
-                <p>Gym</p>
+                <p>{t('Gym')}</p>
               </div>
             </div>
             <div className="card">
               <div className="blur">
-                <p>Billiard room</p>
+                <p>{t('Billiard room')}</p>
               </div>
             </div>
           </div>
-          <Link to='facilities' className='link'><button>More</button></Link>
+          <Link to='facilities' className='link'><button>{t('More')}</button></Link>
         </div>
 
         <div className="map">
